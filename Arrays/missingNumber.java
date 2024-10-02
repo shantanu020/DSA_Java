@@ -40,13 +40,26 @@ public class missingNumber {
         // #################################### Best ###########################
 
         // SUM METHOD
-        int sum=(N+1)*(N+2)/2;
-        int numSum=0;
+
+        // int sum=(N+1)*(N+2)/2;
+        // int numSum=0;
+        // for(int i=0;i<N;i++){
+        //     numSum+=nums[i];
+        // }
+        // mis=sum-numSum;
+        
+
+        // XOR METHOD
+
+        int x1=0;
+        int x2=0;
         for(int i=0;i<N;i++){
-            numSum+=nums[i];
+            x1=x1^(i+1);
+            x2=x2^nums[i];
         }
-        mis=sum-numSum;
+        mis=x1^x2^(N+1);
         System.out.println(mis);
+
 
     }
     
