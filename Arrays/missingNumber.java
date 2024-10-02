@@ -1,5 +1,6 @@
 import java.util.*;
 public class missingNumber {
+    // range [1,N+1]
     public static void main(String [] args){
         int nums[]={1,2,4,5};
         int N=nums.length;
@@ -23,18 +24,28 @@ public class missingNumber {
 
         // #################################### Better #######################
         // hashing
-        int hash[]=new int[N+1];
-        Arrays.fill(hash,0);
+        // int hash[]=new int[N+1];
+        // Arrays.fill(hash,0);
+        // for(int i=0;i<N;i++){
+        //     if (nums[i] <= N) { 
+        //         hash[nums[i]] = 1;  
+        //     }
+        // }
+        // for(int i=0;i<=N;i++){
+        //     if(hash[i]==0){
+        //         mis=i;
+        //     }
+        // }
+
+        // #################################### Best ###########################
+
+        // SUM METHOD
+        int sum=(N+1)*(N+2)/2;
+        int numSum=0;
         for(int i=0;i<N;i++){
-            if (nums[i] <= N) { 
-                hash[nums[i]] = 1;  
-            }
+            numSum+=nums[i];
         }
-        for(int i=0;i<=N;i++){
-            if(hash[i]==0){
-                mis=i;
-            }
-        }
+        mis=sum-numSum;
         System.out.println(mis);
 
     }
