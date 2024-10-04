@@ -32,18 +32,24 @@ class appearsOnce{
         // }
 
         // using map
-        Map<Integer,Integer> map=new HashMap<>();
-        for(int a:arr){
-            int val=map.getOrDefault(a, 0);
-            map.put(a,val+1);
-        }
-        for (Map.Entry<Integer, Integer> mp : map.entrySet())
-        {
-           if(mp.getValue()==1){
-            System.out.println("Number that appearsOnce: "+mp.getKey());
-           }
-        }
+        // Map<Integer,Integer> map=new HashMap<>();
+        // for(int a:arr){
+        //     int val=map.getOrDefault(a, 0);
+        //     map.put(a,val+1);
+        // }
+        // for (Map.Entry<Integer, Integer> mp : map.entrySet())
+        // {
+        //    if(mp.getValue()==1){
+        //     System.out.println("Number that appearsOnce: "+mp.getKey());
+        //    }
+        // }
 
+        // Optimal (xor)
+        int xor=0;
+        for(int b:arr){
+            xor^=b;
+        }
+        System.out.println("Number that appearsOnce: "+xor);
 
     }
 }
