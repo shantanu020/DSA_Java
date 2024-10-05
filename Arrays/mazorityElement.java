@@ -1,4 +1,4 @@
-impo
+import java.util.*;
 
 public class mazorityElement {
     public static void main(String[] args) {
