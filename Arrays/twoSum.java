@@ -14,7 +14,7 @@ public class twoSum {
         //     }
         // }
         
-        // better using hashing
+        // better using hashing (Optimal if we have to return indexes)
         Map<Integer,Integer> map=new HashMap<>();
         for(int i=0;i<n;i++){
             if(map.containsKey(target-arr[i])){
