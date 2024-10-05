@@ -24,6 +24,7 @@ public class mazorityElement {
         for(int i=0;i<n;i++){
             if(cnt==0){
                 maz=arr[i];
+                cnt++;
             }
             cnt+=(maz==arr[i])?1:-1;
         }
