@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class twoSum {
     public static void main(String[] args) {
         int arr[]={2,6,5,8,11};
@@ -23,7 +23,7 @@ public class twoSum {
         // }
 
         // Optimal if to return true/false, YES/NO
-
+        Arrays.sort(arr);
         int i=0;
         int j=n-1;
         while(i<j){
