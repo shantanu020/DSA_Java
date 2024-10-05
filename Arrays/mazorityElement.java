@@ -1,11 +1,10 @@
-
-import java.util.*;
+impo
 
 public class mazorityElement {
     public static void main(String[] args) {
         // Brute linear search and cnt , return arr[i] if cnt>n/2
 
-        // Better (use hashing)
+        Better (use hashing)
         int arr[]={2,2,1,1,1,2,2};
         int n=7;
         HashMap<Integer,Integer> map=new  HashMap<>();
