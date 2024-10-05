@@ -1,6 +1,6 @@
-import java.util.*;
+// import java.util.*;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
+// import javax.swing.text.html.HTMLDocument.Iterator;
 class appearsOnce{
     public static void main(String args[]){
         int arr[]={1,1,2,3,3,4,4};

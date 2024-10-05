@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 public class missingNumber {
     // range [1,N+1]
     public static void main(String [] args){
