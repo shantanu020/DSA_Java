@@ -19,8 +19,9 @@ public class alternateNumbers {
             System.out.print(b[i]+" ");
         }
         System.out.println();
-        int c[]=varietyII(arr1, m);
+        
         // if number of positive and negative elements are not equal;
+        int c[]=varietyII(arr1, m);
         System.out.println("VARIETY 2");
         for (int i = 0; i < m; i++) {
             System.out.print(c[i]+" ");
