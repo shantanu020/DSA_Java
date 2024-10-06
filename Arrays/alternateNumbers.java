@@ -1,17 +1,29 @@
+
+import java.util.ArrayList;
+
 public class alternateNumbers {
     public static void main(String[] args) {
         int arr[]={3,1,-2,-5,2,-4};
+        int arr1[]={1,2,-4,-5,3,6};
         int n=arr.length;
-        arr=brute(arr, n);
+        int m=arr1.length;
+        int []a=brute(arr, n);
         System.out.println("BRUTE RESULT");
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i]+" ");
+            System.out.print(a[i]+" ");
         }
-        arr=optimal(arr, n);
+        int []b=optimal(arr, n);
         System.out.println();
         System.out.println("OPTIMAL RESULT");
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i]+" ");
+            System.out.print(b[i]+" ");
+        }
+        System.out.println();
+        int c[]=varietyII(arr1, m);
+        // if number of positive and negative elements are not equal;
+        System.out.println("VARIETY 2");
+        for (int i = 0; i < m; i++) {
+            System.out.print(c[i]+" ");
         }
     }
     public static int[] brute(int []arr,int n){
@@ -46,5 +58,37 @@ public class alternateNumbers {
             }
         }
         return ans;
+    }
+
+    public static int[] varietyII(int [] arr,int n){
+        ArrayList<Integer> pos=new ArrayList<>();
+        ArrayList<Integer> neg=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            if(arr[i]>=0){
+                pos.add(arr[i]);
+            }else{
+                neg.add(arr[i]);
+            }
+        }
+        if(neg.size()<pos.size()){
+            for(int i=0;i<neg.size();i++){
+                arr[2*i]=pos.get(i);
+                arr[2*i+1]=neg.get(i);
+            }
+            int indx=neg.size()*2;
+            for(int i=neg.size();i<pos.size();i++){
+                arr[indx++]=pos.get(i);
+            }
+        }else{
+            for(int i=0;i<pos.size();i++){
+                arr[2*i]=pos.get(i);
+                arr[2*i+1]=neg.get(i);
+            }
+            int indx=pos.size()*2;
+            for(int i=pos.size();i<n;i++){
+                arr[indx++]=neg.get(i);
+            }
+        }
+        return arr;
     }
 }
