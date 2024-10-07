@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "reverseArray",
+            "request": "launch",
+            "mainClass": "Recursion.reverseArray",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "factorial",
             "request": "launch",
             "mainClass": "Recursion.factorial",
