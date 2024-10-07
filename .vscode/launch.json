@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SumOfFirstN",
+            "request": "launch",
+            "mainClass": "Recursion.SumOfFirstN",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "printNto1",
             "request": "launch",
             "mainClass": "Recursion.printNto1",

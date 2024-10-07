@@ -13,3 +13,5 @@ public class print1toN {
         print(n-1,i+1);
     }
 }
+// TC: O(N)
+// SC: O(N) {Internal Stack Space}
