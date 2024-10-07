@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "Recursion.factorial",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "SumOfFirstN",
             "request": "launch",
             "mainClass": "Recursion.SumOfFirstN",
