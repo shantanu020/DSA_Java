@@ -9,7 +9,7 @@ public class SumOfFirstN {
     }
     public static int printSum(int [] arr,int sum,int i){
         if(i==arr.length){
-            return sum;
+            return 0;
         }
         return (int)Math.pow(arr[i],3)+printSum(arr,sum,i+1);
     }
