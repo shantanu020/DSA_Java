@@ -16,3 +16,4 @@ public class SumOfFirstN {
 }
 // TC:O(N)
 // SC:O(N) {Internal Stack Space}
+// for constant TC and SC use formula for calculating sum of cube of n number which is (n*(n+1)/2)^2;
