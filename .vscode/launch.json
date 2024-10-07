@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "print1toN",
+            "request": "launch",
+            "mainClass": "Recursion.print1toN",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "printName",
             "request": "launch",
             "mainClass": "Recursion.printName",
