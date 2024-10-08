@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AdvPalString",
+            "request": "launch",
+            "mainClass": "Recursion.AdvPalString",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Recursion.Fibonacci",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "palindromeString",
             "request": "launch",
             "mainClass": "Recursion.palindromeString",
