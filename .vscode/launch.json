@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Rotate2dMatrix",
+            "request": "launch",
+            "mainClass": "Rotate2dMatrix",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "AdvPalString",
             "request": "launch",
             "mainClass": "Recursion.AdvPalString",
