@@ -27,6 +27,7 @@ public class Rotate2dMatrix {
 
         // Transpose;
         for(int i=0;i<row;i++){
+            // if j is started with 0 then elements will be swapped twice; 
             for(int j=i;j<row;j++){
                 int t=arr[i][j];
                 arr[i][j]=arr[j][i];
