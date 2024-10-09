@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SquareRoot",
+      "request": "launch",
+      "mainClass": "Searching.SquareRoot",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "FirstOccurrence",
+      "request": "launch",
+      "mainClass": "Searching.FirstOccurrence",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "Binary",
       "request": "launch",
       "mainClass": "Searching.Binary",

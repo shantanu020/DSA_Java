@@ -7,7 +7,7 @@ public class Binary{
         int high=5;
         int key=5;
         int indx=-1;
-        while(low<high){
+        while(low<=high){
             int mid=(low+high)/2;
             if(arr[mid]==key){
                 indx=mid;
@@ -21,3 +21,5 @@ public class Binary{
         System.out.println(indx +":"+key);
     }
 }
+// Array must be sorted 
+// TC: O(logn)
