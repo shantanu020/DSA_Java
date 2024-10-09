@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SumOfDigits",
+      "request": "launch",
+      "mainClass": "Recursion.SumOfDigits",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "DecimalToBinary",
+      "request": "launch",
+      "mainClass": "Number.DecimalToBinary",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "BinaryToDecimal",
+      "request": "launch",
+      "mainClass": "Number.BinaryToDecimal",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "BinaryToDecimal",
+      "request": "launch",
+      "mainClass": "BinaryToDecimal",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "SquareRoot",
       "request": "launch",
       "mainClass": "Searching.SquareRoot",
