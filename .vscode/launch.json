@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "Sortings.HeapSort",
+            "projectName": "DSA_Java_1c73b511"
+        },
+        {
+            "type": "java",
             "name": "Rotate2dMatrix",
             "request": "launch",
             "mainClass": "Rotate2dMatrix",
