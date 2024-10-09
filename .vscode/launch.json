@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Binary",
+      "request": "launch",
+      "mainClass": "Searching.Binary",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "Linear",
       "request": "launch",
       "mainClass": "Searching.Linear",
