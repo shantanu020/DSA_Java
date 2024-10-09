@@ -1,105 +1,128 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Linear",
+      "request": "launch",
+      "mainClass": "Searching.Linear",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "PrefixSum2D",
+      "request": "launch",
+      "mainClass": "PrefixSum2D",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "HeapSort",
+      "request": "launch",
+      "mainClass": "Sortings.HeapSort",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "Rotate2dMatrix",
+      "request": "launch",
+      "mainClass": "Rotate2dMatrix",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "AdvPalString",
+      "request": "launch",
+      "mainClass": "Recursion.AdvPalString",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "Fibonacci",
+      "request": "launch",
+      "mainClass": "Recursion.Fibonacci",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "palindromeString",
+      "request": "launch",
+      "mainClass": "Recursion.palindromeString",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "reverseArray",
+      "request": "launch",
+      "mainClass": "Recursion.reverseArray",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "factorial",
+      "request": "launch",
+      "mainClass": "Recursion.factorial",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "SumOfFirstN",
+      "request": "launch",
+      "mainClass": "Recursion.SumOfFirstN",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "printNto1",
+      "request": "launch",
+      "mainClass": "Recursion.printNto1",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "print1toN",
+      "request": "launch",
+      "mainClass": "Recursion.print1toN",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "printName",
+      "request": "launch",
+      "mainClass": "Recursion.printName",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "appearsOnce",
+      "request": "launch",
+      "mainClass": "appearsOnce",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/shant/OneDrive/Desktop/DSA_Java/Searching",
+      "program": "c:/Users/shant/OneDrive/Desktop/DSA_Java/Searching/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
         {
-            "type": "java",
-            "name": "PrefixSum2D",
-            "request": "launch",
-            "mainClass": "PrefixSum2D",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "HeapSort",
-            "request": "launch",
-            "mainClass": "Sortings.HeapSort",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "Rotate2dMatrix",
-            "request": "launch",
-            "mainClass": "Rotate2dMatrix",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "AdvPalString",
-            "request": "launch",
-            "mainClass": "Recursion.AdvPalString",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "Fibonacci",
-            "request": "launch",
-            "mainClass": "Recursion.Fibonacci",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "palindromeString",
-            "request": "launch",
-            "mainClass": "Recursion.palindromeString",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "reverseArray",
-            "request": "launch",
-            "mainClass": "Recursion.reverseArray",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "factorial",
-            "request": "launch",
-            "mainClass": "Recursion.factorial",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "SumOfFirstN",
-            "request": "launch",
-            "mainClass": "Recursion.SumOfFirstN",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "printNto1",
-            "request": "launch",
-            "mainClass": "Recursion.printNto1",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "print1toN",
-            "request": "launch",
-            "mainClass": "Recursion.print1toN",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "printName",
-            "request": "launch",
-            "mainClass": "Recursion.printName",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "appearsOnce",
-            "request": "launch",
-            "mainClass": "appearsOnce",
-            "projectName": "DSA_Java_1c73b511"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
-    ]
+      ]
+    }
+  ]
 }
