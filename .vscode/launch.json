@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CountWays",
+      "request": "launch",
+      "mainClass": "Recursion.CountWays",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "PowerOfNum",
       "request": "launch",
       "mainClass": "Recursion.PowerOfNum",
