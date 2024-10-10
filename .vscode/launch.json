@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PowerOfNum",
+      "request": "launch",
+      "mainClass": "Recursion.PowerOfNum",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "BinarySearchRecursion",
       "request": "launch",
       "mainClass": "Recursion.BinarySearchRecursion",
