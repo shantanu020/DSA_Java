@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarySearchRecursion",
+      "request": "launch",
+      "mainClass": "Recursion.BinarySearchRecursion",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "PrintingOfMultiple",
+      "request": "launch",
+      "mainClass": "Recursion.PrintingOfMultiple",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
+      "name": "AlternateSum",
+      "request": "launch",
+      "mainClass": "Recursion.AlternateSum",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "SumOfDigits",
       "request": "launch",
       "mainClass": "Recursion.SumOfDigits",
