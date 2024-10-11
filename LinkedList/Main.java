@@ -306,6 +306,26 @@ class LinkedList{
         }
     }
 
+    // SEARCHING AN ELEMENT IN THE LINKED LIST
+    public void search(int key){
+        Node temp=head;
+        boolean found=false;
+        int pos=1;
+        while(temp!=null){
+            if(temp.data==key){
+                found =true;
+                break;
+            }
+            pos++;
+            temp=temp.next;
+        }
+        if(found){
+            System.out.println("Element found at pos: "+pos);
+        }else{
+            System.out.println("Element not found");
+        }
+    }
+
 }
 
 public class Main {
@@ -320,6 +340,7 @@ public class Main {
         link.reverseRecur(null, link.getHead());
         link.display();
         link.mid();
+        link.search(5);
         link.detectCycle();
     }
     
