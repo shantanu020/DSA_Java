@@ -75,6 +75,39 @@ class LinkedList{
             System.out.println("Key not Found: "+key);
         }
     }
+    public void insertAtPos(int pos,int data){
+        if(head==null){
+            System.out.println("Linked List is empty");
+            return;
+        }
+        // if position to be inserted is at begining
+        if(pos==1){
+            insertAtBeg(data);
+            return;
+        }
+        // if position to be inserted is in between begining and end
+        Node temp=head;
+        Node preTemp=head;
+        Node newNode= new Node(data);
+        while(temp!=null&&pos!=1){
+            preTemp=temp;
+            temp=temp.next;
+            pos--;
+        }
+        if(temp!=null&&pos==1)
+        {
+            newNode.next=preTemp.next;
+            preTemp.next=newNode;
+        }
+        // is position to be inserted is at end
+        if(temp==null){
+            insertAtEnd(data);
+        }else{
+            System.out.println("Position is out of bound");
+        }
+
+
+    }
     public void delAtBeg(){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -138,12 +171,36 @@ class LinkedList{
         }
         
     }
-    // public void delAtPos(int pos){
-    //     if(head==null){
-    //         System.out.println("Linked List is empty");
-    //         return;
-    //     }
-    // }
+    public void delAtPos(int pos){
+        if(head==null){
+            System.out.println("Linked List is empty");
+            return;
+        }
+        // if position to be deleted is at begining
+        if(pos==1){
+            delAtBeg();
+        }
+        Node temp=head;
+        Node preTemp=head;
+        while(temp!=null&&pos!=1){
+            preTemp=temp;
+            temp=temp.next;
+            pos--;
+        }
+        // if position to be deleted doesn't exist
+        if(pos>1||temp==null){
+            System.out.println("Position is out of bound");
+        }
+        // if position to be deleted is at end  
+        else if(temp.next==null){
+            delAtEnd();
+        }
+        // if position to be deleted exist and in between the first and last position
+        else{
+            preTemp.next=temp.next;
+        }
+       
+    }
     public void display(){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -164,7 +221,6 @@ public class Main {
         for(int i=0;i<=10;i++){
             link.insertAtEnd(i);
         }
-        
         link.display();
     }
     
