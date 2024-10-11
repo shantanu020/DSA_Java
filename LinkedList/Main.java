@@ -1,5 +1,6 @@
 package LinkedList;
 
+// Node 
 class Node{
     int data;
     Node next;
@@ -8,8 +9,13 @@ class Node{
         this.next=null;
     }
 }
+
+// LinkedList Class 
 class LinkedList{
+
     private Node head=null;
+
+    // INSERT AT END
     public void insertAtEnd(int data){
         Node newNode=new Node(data);
         if(head==null){
@@ -23,6 +29,9 @@ class LinkedList{
             temp.next=newNode;
         }
     }
+
+
+    // INSERT AT BEGINING
     public void insertAtBeg(int data){
         // create a newNode
         Node newNode=new Node(data);
@@ -31,6 +40,8 @@ class LinkedList{
         // make newNode as head
         head=newNode;
     }
+
+    // INSERT AFTER A NODE
     public void insertAfter(int key,int data){
         // if head is null return
         if(head==null){
@@ -52,6 +63,8 @@ class LinkedList{
         }
         
     }
+
+    // INSERT BEFORE A NODE
     public void insertBefore(int key,int data){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -75,6 +88,8 @@ class LinkedList{
             System.out.println("Key not Found: "+key);
         }
     }
+
+    // INSERT AT POSITION
     public void insertAtPos(int pos,int data){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -108,6 +123,8 @@ class LinkedList{
 
 
     }
+
+    // DEL AT BEGINING
     public void delAtBeg(){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -118,6 +135,8 @@ class LinkedList{
         temp.next=null;
 
     }
+
+    // DEL AT END
     public void delAtEnd(){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -131,6 +150,8 @@ class LinkedList{
         }
         preTemp.next=null;
     }
+
+    // DEL AFTER
     public void delAfter(int key){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -149,6 +170,8 @@ class LinkedList{
         }
         
     }
+
+    // DEL BEFORE
     public void delBefore(int key){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -171,6 +194,8 @@ class LinkedList{
         }
         
     }
+
+    // DEL AT POS
     public void delAtPos(int pos){
         if(head==null){
             System.out.println("Linked List is empty");
@@ -201,6 +226,8 @@ class LinkedList{
         }
        
     }
+
+    // DISPLAY
     public void display(){
         if(head==null){
             System.out.println("Linked List is empty");
