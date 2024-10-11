@@ -14,6 +14,10 @@ class Node{
 class LinkedList{
 
     private Node head=null;
+    // GET HEAD
+    public Node getHead(){
+        return head;
+    }
 
     // INSERT AT END
     public void insertAtEnd(int data){
@@ -240,6 +244,34 @@ class LinkedList{
         }
         System.out.println(temp.data);
     }
+
+    // REVERSING THE LINKEDLIST
+    public void reverse(){
+        Node currNode=head;
+        Node prevNode=null;
+        Node nextNode;
+        while(currNode!=null){
+            nextNode=currNode.next;
+            currNode.next=prevNode;
+
+            prevNode=currNode;
+            currNode=nextNode;
+        }
+        head=prevNode;
+    }
+
+    // REVERSING THE LINKEDLIST RECURSIVELY
+    public void reverseRecur(Node prevNode,Node currNode)
+    {
+        if(currNode==null){
+            head=prevNode;
+            return;
+        }
+        Node nextNode=currNode.next;
+        currNode.next=prevNode;
+        reverseRecur(currNode, nextNode);
+    }
+
 }
 
 public class Main {
@@ -248,6 +280,10 @@ public class Main {
         for(int i=0;i<=10;i++){
             link.insertAtEnd(i);
         }
+        link.display();
+        link.reverse();
+        link.display();
+        link.reverseRecur(null, link.getHead());
         link.display();
     }
     
