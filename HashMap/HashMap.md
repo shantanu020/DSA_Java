@@ -23,8 +23,6 @@
 
 > 2.Chaining (not effiecient as it uses extra space outside the hash table)
 
-
-
 ## Various functions of HashMap
 
 > 1.put() - to add key value pair
