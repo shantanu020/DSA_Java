@@ -326,22 +326,41 @@ class LinkedList{
         }
     }
 
+    // REMOVING DUPLICATES FROM SORTED LINKEDLIST
+    public void removeDuplicates(){
+        Node temp=head.next;
+        Node preTemp=head;
+        while(temp!=null){
+            // if current and next node both have same data
+            if(preTemp.data==temp.data){
+                // skip the duplicate node
+                preTemp.next=temp.next;
+                temp=preTemp.next;
+            }
+            else{
+                // move both the pointers
+                preTemp=preTemp.next;
+                temp=temp.next;
+            }
+            
+        }
+    }
+
 }
 
 public class Main {
     public static void main(String[] args) {
         LinkedList link=new LinkedList();
-        for(int i=0;i<11;i++){
-            link.insertAtEnd(i);
-        }
+        link.insertAtBeg(5);
+        link.insertAtBeg(5);
+        link.insertAtBeg(3);
+        link.insertAtBeg(2);
+        link.insertAtBeg(2);
+        link.insertAtBeg(2);
+        link.insertAtBeg(1);
         link.display();
-        link.reverse();
+        link.removeDuplicates();
         link.display();
-        link.reverseRecur(null, link.getHead());
-        link.display();
-        link.mid();
-        link.search(5);
-        link.detectCycle();
     }
     
 }
