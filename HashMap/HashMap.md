@@ -13,11 +13,11 @@
 ## Collision resolution technique in hashing
 
 > 1.Open Addressing
-    Linear Probing: pos=(hf(v)+i)%m  {i is number of probes}
+    -Linear Probing: pos=(hf(v)+i)%m  {i is number of probes}
         -Problem of primary clustering (two or more values follow same path to reach to an empty key)
-    Quadratic Probing: pos=(hf(v)+c1*i+c2*i^2)%m
+    -Quadratic Probing: pos=(hf(v)+c1*i+c2*i^2)%m
         -Limitations are loss of data and Secondary clustering 
-    Double Hashing: pos=(hf1(v)+hf2(v)*i)%m
+    -Double Hashing: pos=(hf1(v)+hf2(v)*i)%m
         -Limitation is loss of data
         
 
