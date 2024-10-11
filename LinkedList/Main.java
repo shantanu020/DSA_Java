@@ -272,12 +272,24 @@ class LinkedList{
         reverseRecur(currNode, nextNode);
     }
 
+    // FINDING MIDDLE OF THE LINKEDLIST
+    public void mid(){
+        Node slowTemp=head;
+        Node fastTemp=head;
+        while(fastTemp!=null&&fastTemp.next!=null){
+            slowTemp=slowTemp.next;
+            fastTemp=fastTemp.next.next;
+        }
+        System.out.println("Middle: "+slowTemp.data);
+        
+    }
+
 }
 
 public class Main {
     public static void main(String[] args) {
         LinkedList link=new LinkedList();
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<11;i++){
             link.insertAtEnd(i);
         }
         link.display();
@@ -285,6 +297,7 @@ public class Main {
         link.display();
         link.reverseRecur(null, link.getHead());
         link.display();
+        link.mid();
     }
     
 }
