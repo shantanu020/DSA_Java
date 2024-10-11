@@ -283,6 +283,28 @@ class LinkedList{
         System.out.println("Middle: "+slowTemp.data);
         
     }
+    
+    // CYCLE DETECTION IN LINKEDLIST
+    // FLOYD'S CYCLE DETECTION ALGORITHM
+    // if slow and fast pointers both point to same node this means loop is detected
+    public void detectCycle(){
+        Node slowTemp=head;
+        Node fastTemp=head;
+        boolean flag=false;
+        while(fastTemp!=null&&fastTemp.next!=null){
+            slowTemp=slowTemp.next;
+            fastTemp=fastTemp.next.next;
+            if(slowTemp==fastTemp){
+                flag=true;
+                break;
+            }
+        }
+        if(flag){
+            System.out.println("Cycle detected");
+        }else{
+            System.out.println("Cycle not detected");
+        }
+    }
 
 }
 
@@ -298,6 +320,7 @@ public class Main {
         link.reverseRecur(null, link.getHead());
         link.display();
         link.mid();
+        link.detectCycle();
     }
     
 }
