@@ -364,3 +364,9 @@ public class Main {
     }
     
 }
+
+
+// some important questions on linkedList
+// 1. Linked list is Palindrome or not
+// 2. Addition of two linkedlist
+
