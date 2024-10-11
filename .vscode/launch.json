@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ValidParenthesis",
+      "request": "launch",
+      "mainClass": "Stack.ValidParenthesis",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "FirstOccurence",
       "request": "launch",
       "mainClass": "HashMap.FirstOccurence",
