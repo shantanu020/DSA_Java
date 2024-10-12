@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Stack",
+      "request": "launch",
+      "mainClass": "Stack.Stack",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "AreaUnderHistogram",
       "request": "launch",
       "mainClass": "Stack.AreaUnderHistogram",
