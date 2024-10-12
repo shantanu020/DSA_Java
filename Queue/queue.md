@@ -6,7 +6,7 @@
 
 >[!NOTE]
 >Using Deque we can insert or delete elements at both ends
->Deque has few methods which throw exceptions while others return null value we can understand this by below table
+>Deque has few methods which throw exceptions while others return null value we can understand this by below table    
 | **Operation**             | **Throws Exception**   | **Does Not Throw Exception** |
 |---------------------------|------------------------|------------------------------|
 | **Insert at Front**       | `addFirst(e)`          | `offerFirst(e)`              |
