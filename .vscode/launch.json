@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DequeMain",
+      "request": "launch",
+      "mainClass": "Queue.DequeMain",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "StackFromQueue",
       "request": "launch",
       "mainClass": "Stack.StackFromQueue",
