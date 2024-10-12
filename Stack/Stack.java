@@ -1,6 +1,6 @@
 package Stack;
 public class Stack {
-    public int[] data;
+    protected  int[] data;
     private static final int DEFAULT_SIZE=10;
     int ptr=-1;
     public Stack(){
