@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QueueFromStack",
+      "request": "launch",
+      "mainClass": "Queue.QueueFromStack",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "QueueMain",
       "request": "launch",
       "mainClass": "Queue.QueueMain",
