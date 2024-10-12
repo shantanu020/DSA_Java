@@ -54,3 +54,7 @@ public class StackFromQueue {
 
     
 }
+// TC: 
+// push() -O(n)
+// pop()  -O(1)
+// peek() -O(1)
