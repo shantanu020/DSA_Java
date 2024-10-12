@@ -1,8 +1,8 @@
 #QUEUE 
 
-1.Queue
-2.Circular Queue
-3.Deque
+1.Queue  
+2.Circular Queue  
+3.Deque  
 
 >[!NOTE]
 >Using Deque we can insert or delete elements at both ends
