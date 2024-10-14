@@ -13,6 +13,14 @@ Backtracking is an algorithmic technique used to solve problems incrementally by
 2. **Explore**: Recursively explore all subsequent options.
 3. **Unchoose (Backtrack)**: If the current choice doesn’t lead to a valid solution, undo it and try another.
 
+
+## Algorithm
+1. Build the solution step by step using recursion.
+2. State space tree is used to find all the solutions.
+3. Explore the solutions and check if constraints are satisfied.
+    - If constraints are satisfied keep looking for solution.
+    - Else algorithm returns to previous level.
+
 ## Example Problems
 ### 1. N-Queens Problem
 ### 2. Subset permutations
