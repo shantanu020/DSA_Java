@@ -24,3 +24,6 @@ Backtracking is an algorithmic technique used to solve problems incrementally by
 ## Example Problems
 ### 1. N-Queens Problem
 ### 2. Subset permutations
+### 3. Combinations
+### 4. Rat in a maze
+### 5. Sudoku Solver
