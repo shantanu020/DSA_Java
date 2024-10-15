@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Combinations",
+      "request": "launch",
+      "mainClass": "Recursion.Combinations",
+      "projectName": "DSA_Java_1c73b511"
+    },
+    {
+      "type": "java",
       "name": "Permutations",
       "request": "launch",
       "mainClass": "Recursion.Permutations",
